@@ -1,0 +1,208 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>How to Write a README on GitHub</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=f466f309d6">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://jostw.github.io/how-to-write-a-readme-on-github/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="就式人生">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Write a README on GitHub">
+    <meta property="og:description" content="最近在寫 GitHub 上的 README，發現這個東西好像每個人的寫法都不太一樣，於是稍微整理了一下自己覺得大概要包含哪些內容。 Motivation 顧名思義就是簡介一下為什麼會有這個專案，以及這個專案大概在做什麼，解決了什麼問題。最好是三到五句話講出重點，不然很多人看到落落長的文章可能就跳過了 XD Getting Started / Installation 如何快速地開始使用這個專案，通常會包含安裝以及環境設定等等。 Example / Demo 一個簡單有力的範例可以讓大家更容易了解這個專案在做什麼，也有人會將這段與 Getting Started 整合在一起。基本上我在 survey 任何東西都是先找這段來看，所以可以放越前面越好。如果可以的話，提供一個線上的 Demo 也是很好的選擇。 簡單來說就是，Show Me the Code! Overview 列出這個專案使用到哪些 3rd party 的工具或是 library。這可能會是開發者在選擇上一個重要的參考依據。 API Reference 這邊開始就進入比較詳細的設定。包含提供哪些 API">
+    <meta property="og:url" content="http://jostw.github.io/how-to-write-a-readme-on-github/">
+    <meta property="article:published_time" content="2015-07-16T07:04:41.609Z">
+    <meta property="article:modified_time" content="2015-08-03T06:04:56.313Z">
+    <meta property="article:tag" content="README">
+    <meta property="article:tag" content="GitHub">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to Write a README on GitHub">
+    <meta name="twitter:description" content="最近在寫 GitHub 上的 README，發現這個東西好像每個人的寫法都不太一樣，於是稍微整理了一下自己覺得大概要包含哪些內容。 Motivation 顧名思義就是簡介一下為什麼會有這個專案，以及這個專案大概在做什麼，解決了什麼問題。最好是三到五句話講出重點，不然很多人看到落落長的文章可能就跳過了 XD Getting Started / Installation 如何快速地開始使用這個專案，通常會包含安裝以及環境設定等等。 Example / Demo 一個簡單有力的範例可以讓大家更容易了解這個專案在做什麼，也有人會將這段與 Getting Started 整合在一起。基本上我在 survey 任何東西都是先找這段來看，所以可以放越前面越好。如果可以的話，提供一個線上的 Demo 也是很好的選擇。 簡單來說就是，Show Me the Code! Overview 列出這個專案使用到哪些 3rd party 的工具或是 library。這可能會是開發者在選擇上一個重要的參考依據。 API Reference 這邊開始就進入比較詳細的設定。包含提供哪些 API">
+    <meta name="twitter:url" content="http://jostw.github.io/how-to-write-a-readme-on-github/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="jos">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="README, GitHub">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "就式人生",
+        "logo": "http://jostw.github.io/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "jos",
+        "image": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+        "url": "http://jostw.github.io/author/jos/",
+        "sameAs": []
+    },
+    "headline": "How to Write a README on GitHub",
+    "url": "http://jostw.github.io/how-to-write-a-readme-on-github/",
+    "datePublished": "2015-07-16T07:04:41.609Z",
+    "dateModified": "2015-08-03T06:04:56.313Z",
+    "keywords": "README, GitHub",
+    "description": "最近在寫 GitHub 上的 README，發現這個東西好像每個人的寫法都不太一樣，於是稍微整理了一下自己覺得大概要包含哪些內容。 Motivation 顧名思義就是簡介一下為什麼會有這個專案，以及這個專案大概在做什麼，解決了什麼問題。最好是三到五句話講出重點，不然很多人看到落落長的文章可能就跳過了 XD Getting Started / Installation 如何快速地開始使用這個專案，通常會包含安裝以及環境設定等等。 Example / Demo 一個簡單有力的範例可以讓大家更容易了解這個專案在做什麼，也有人會將這段與 Getting Started 整合在一起。基本上我在 survey 任何東西都是先找這段來看，所以可以放越前面越好。如果可以的話，提供一個線上的 Demo 也是很好的選擇。 簡單來說就是，Show Me the Code! Overview 列出這個專案使用到哪些 3rd party 的工具或是 library。這可能會是開發者在選擇上一個重要的參考依據。 API Reference 這邊開始就進入比較詳細的設定。包含提供哪些 API"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="就式人生" href="http://jostw.github.io/rss/">
+</head>
+<body class="post-template tag-readme tag-github nav-closed">
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-readme tag-github">
+
+        <header class="post-header">
+            <h1 class="post-title">How to Write a README on GitHub</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-07-16">16 July 2015</time>  on <a href="../tag/readme/">README</a>, <a href="../tag/github/">GitHub</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>最近在寫 <a href="https://github.com/">GitHub</a> 上的 README，發現這個東西好像每個人的寫法都不太一樣，於是稍微整理了一下自己覺得大概要包含哪些內容。</p>
+
+<h4 id="motivation">Motivation</h4>
+
+<p>顧名思義就是簡介一下為什麼會有這個專案，以及這個專案大概在做什麼，解決了什麼問題。最好是三到五句話講出重點，不然很多人看到落落長的文章可能就跳過了 XD</p>
+
+<h4 id="gettingstartedinstallation">Getting Started / Installation</h4>
+
+<p>如何快速地開始使用這個專案，通常會包含安裝以及環境設定等等。</p>
+
+<h4 id="exampledemo">Example / Demo</h4>
+
+<p>一個簡單有力的範例可以讓大家更容易了解這個專案在做什麼，也有人會將這段與 Getting Started 整合在一起。基本上我在 survey 任何東西都是先找這段來看，所以可以放越前面越好。如果可以的話，提供一個線上的 Demo 也是很好的選擇。</p>
+
+<p>簡單來說就是，<a href="http://i.imgur.com/qp3jo3H.jpg">Show Me the Code</a>!</p>
+
+<h4 id="overview">Overview</h4>
+
+<p>列出這個專案使用到哪些 3rd party 的工具或是 library。這可能會是開發者在選擇上一個重要的參考依據。</p>
+
+<h4 id="apireference">API Reference</h4>
+
+<p>這邊開始就進入比較詳細的設定。包含提供哪些 API 可以使用，或是一些客製化的選項。</p>
+
+<h4 id="developmenttests">Development / Tests</h4>
+
+<p>如何進行開發，或是測試。</p>
+
+<h4 id="contributors">Contributors</h4>
+
+<p>列出這個專案的主要貢獻者以及 GitHub 或是 Twitter 帳號<del>，讓大家知道有 bug 要找誰解</del>。</p>
+
+<h4 id="license">License</h4>
+
+<p>這個專案使用的 License。</p>
+
+<p>根據專案性質或是其他狀況，可能會多多少少有些不同。不過只要大致上照這個方向去寫，就可以寫出一個像樣的 README 惹 XD</p>
+
+<p>參考資料：<a href="https://gist.github.com/jxson/1784669">https://gist.github.com/jxson/1784669</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/jos/" style="background-image: url(http://www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s&amp;)"><span class="hidden">jos's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/jos/">jos</a></h4>
+
+                    <p>Read <a href="../author/jos/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=How%20to%20Write%20a%20README%20on%20GitHub&amp;url=http://jostw.github.io/how-to-write-a-readme-on-github/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://jostw.github.io/how-to-write-a-readme-on-github/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://jostw.github.io/how-to-write-a-readme-on-github/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../interview-at-toptal/">
+        <section class="post">
+            <h2>Interview at Toptal</h2>
+            <p>這次準備面試前先去應徵了 Toptal。一方面是想說作為面試的練習，另一方面如果真的上了，也可以在空閒時做一下 freelancer 好像也不錯。 Q&amp;A 基本上是透過 Skype 進行一個簡單的訪談，包含之前的工作、從哪得知以及為何想加入 Toptal 等等。這關最主要是確認英文的溝通能力，整個過程不到十分鐘。…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../from-px-to-em/">
+        <section class="post">
+            <h2>From PX to EM</h2>
+            <p>Pixel 是排版最常使用到的單位，但最近我開始改用 em 作為排版主要的單位。預設上 1em = 16px，也就是一個字的寬度。將 px 轉為 em 並不困難，困難的點在於 em 使用的觀念上與 px 並不相同。…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://jostw.github.io">就式人生</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6245027-3', 'auto');
+  ga('send', 'pageview');
+</script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=f466f309d6"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=f466f309d6"></script>
+
+</body>

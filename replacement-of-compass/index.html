@@ -1,0 +1,200 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Replacement of Compass</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=f466f309d6">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://jostw.github.io/replacement-of-compass/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="就式人生">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Replacement of Compass">
+    <meta property="og:description" content="Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在">
+    <meta property="og:url" content="http://jostw.github.io/replacement-of-compass/">
+    <meta property="article:published_time" content="2015-06-02T05:10:37.628Z">
+    <meta property="article:modified_time" content="2015-06-02T05:29:18.020Z">
+    <meta property="article:tag" content="Compass">
+    <meta property="article:tag" content="Sass">
+    <meta property="article:tag" content="Front End">
+    <meta property="article:tag" content="Workflow">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Replacement of Compass">
+    <meta name="twitter:description" content="Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在">
+    <meta name="twitter:url" content="http://jostw.github.io/replacement-of-compass/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="jos">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Compass, Sass, Front End, Workflow">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "就式人生",
+        "logo": "http://jostw.github.io/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "jos",
+        "image": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+        "url": "http://jostw.github.io/author/jos/",
+        "sameAs": []
+    },
+    "headline": "Replacement of Compass",
+    "url": "http://jostw.github.io/replacement-of-compass/",
+    "datePublished": "2015-06-02T05:10:37.628Z",
+    "dateModified": "2015-06-02T05:29:18.020Z",
+    "keywords": "Compass, Sass, Front End, Workflow",
+    "description": "Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.8">
+    <link rel="alternate" type="application/rss+xml" title="就式人生" href="http://jostw.github.io/rss/">
+</head>
+<body class="post-template tag-compass tag-sass tag-front-end tag-workflow nav-closed">
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-compass tag-sass tag-front-end tag-workflow">
+
+        <header class="post-header">
+            <h1 class="post-title">Replacement of Compass</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-06-02">02 June 2015</time>  on <a href="../tag/compass/">Compass</a>, <a href="../tag/sass/">Sass</a>, <a href="../tag/front-end/">Front End</a>, <a href="../tag/workflow/">Workflow</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p><a href="http://compass-style.org">Compass</a> 是寫 <a href="http://sass-lang.com">Sass</a> 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。</p>
+
+<p>在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。</p>
+
+<p>另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 <a href="https://github.com/sass/libsass">LibSass</a> 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在 Node.js 環境下也可以用 <a href="https://github.com/sass/node-sass">node-sass</a> 來整合到專案中。</p>
+
+<p>於是這幾個理由構成了我想替換 Compass 的主要原因。但是 Compass 實在提供太多好用的功能了，想要完全抽離需要下一番功夫。以下就我最常使用到的幾個功能來分析。</p>
+
+<h2 id="compilesasstocss">Compile Sass to CSS</h2>
+
+<p>如上所述，改用 node-sass 做編譯。因為 node-sass 本身就是 npm 的 module 所以整合到 grunt/gulp 中也很容易。CSS 壓縮的話，因為個人 workflow 的關係也並沒有直接使用 Compass 將 CSS 壓縮，而是另外使用 cssmin 的工具。</p>
+
+<h2 id="venderprefixes">Vender Prefixes</h2>
+
+<p>Compass 內建許多好用 mixin 來協助開發，其中最常用的應該就是各種 CSS3 的  vendor prefix，讓瀏覽器可以無縫接軌 CSS3 語法 (ex: border-radious, transition...)。但是隨著瀏覽器版本的更新，現代瀏覽器對於 CSS3 的支援已經越來越高，許多 prefix 也不需要再特地加上去，多餘的 vendor prefix 反而對檔案大小來說是種負擔。</p>
+
+<p>抽離 Compass 之後把這工作交給 <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 這個 postprocessor 可以說是最好的選擇。Autoprefixer 會根據 <a href="http://caniuse.com">Can I Use</a> 的相容性列表來決定要加入哪些 vendor prefix，並且也可以自訂哪個瀏覽器要向下相容幾個版本，相對 Compass 來說具有更良好的彈性。</p>
+
+<h2 id="sprites">Sprites</h2>
+
+<p>上述兩項算是較為簡單的功能替換，而 sprites 算是個人認為最麻煩的部分。使用 Compass 做 sprites 很簡單，把圖片丟到指定的資料夾中，Compass 會自動將圖片組合並產生對應的 Sass 樣式，更重要的是圖片檔名還會自動加上 hash。單獨做 sprites 的工具很多，但要把 Compass 的工作完全無縫接軌過去其實並不簡單。在試過幾種工具之後，目前比較喜歡用 <a href="https://github.com/Ensighten/spritesmith">spritesmith</a>，提供的操作比較全面。但是要完全做到跟 Compass 一樣，尤其是要對圖片檔名加上 hash 這件事會比較麻煩一點，可能要另外寫一篇來說明如何達到這件事。</p>
+
+<h2 id="susy">Susy</h2>
+
+<p>最後要提到的就是在 Compass 上一些好用的工具，其中最常被用到的應該就是 <a href="http://susy.oddbird.net/">Susy</a> 這個寫 grid 非常好用的工具。最早 Susy 是相依於 Compass 中的，所以想要用 Susy 開發的話就必須搭配 Compass 來使用。不過現在官方也出了其他的 solution，包含可以用 bower 安裝，甚至是直接 import Sass 檔。可以根據自己習慣的 workflow 來選擇搭配的方式，因此從 Compass 中抽離就再也不是問題了。</p>
+
+<p>實際上在整合可能還會遇到其他問題，這就要視每個人在使用 Compass 時用得多深了，但是我相信每個功能應該都有其相對應的解法。當然若是覺得這些替代方案的成本太高，繼續使用 Compass 也是一個合理的選擇。</p>
+
+<p>參考資料：<a href="http://bensmithett.com/goodbye-compass/">http://bensmithett.com/goodbye-compass/</a></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/jos/" style="background-image: url(http://www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s&amp;)"><span class="hidden">jos's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/jos/">jos</a></h4>
+
+                    <p>Read <a href="../author/jos/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Replacement%20of%20Compass&amp;url=http://jostw.github.io/replacement-of-compass/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://jostw.github.io/replacement-of-compass/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://jostw.github.io/replacement-of-compass/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../from-px-to-em/">
+        <section class="post">
+            <h2>From PX to EM</h2>
+            <p>Pixel 是排版最常使用到的單位，但最近我開始改用 em 作為排版主要的單位。預設上 1em = 16px，也就是一個字的寬度。將 px 轉為 em 並不困難，困難的點在於 em 使用的觀念上與 px 並不相同。…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(../content/images/2015/02/2015-01-01-00-03-47.jpg)" href="../why-do-we-fall/">
+        <section class="post">
+            <h2>Why do we fall</h2>
+            <p>六年過去，依舊倒映著人生。 Be strong enough to let go, and patient enough to wait for what you deserve. 我們總是努力在失去與獲得中間，找尋人生的意義。…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://jostw.github.io">就式人生</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-6245027-3', 'auto');
+  ga('send', 'pageview');
+</script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=f466f309d6"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=f466f309d6"></script>
+
+</body>
