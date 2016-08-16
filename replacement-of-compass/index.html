@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=b778513192">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=47cfe4efac">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://jostw.github.io/replacement-of-compass/">
@@ -23,11 +23,12 @@
     <meta property="og:description" content="Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在">
     <meta property="og:url" content="http://jostw.github.io/replacement-of-compass/">
     <meta property="article:published_time" content="2015-06-02T05:10:37.628Z">
-    <meta property="article:modified_time" content="2015-06-02T05:29:18.020Z">
+    <meta property="article:modified_time" content="2016-07-10T15:45:26.347Z">
     <meta property="article:tag" content="Compass">
     <meta property="article:tag" content="Sass">
     <meta property="article:tag" content="前端">
     <meta property="article:tag" content="Workflow">
+    <meta property="article:tag" content="心得">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Replacement of Compass">
@@ -36,7 +37,7 @@
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="jos">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Compass, Sass, 前端, Workflow">
+    <meta name="twitter:data2" content="Compass, Sass, 前端, Workflow, 心得">
     
     <script type="application/ld+json">
 {
@@ -59,16 +60,23 @@
     "headline": "Replacement of Compass",
     "url": "http://jostw.github.io/replacement-of-compass/",
     "datePublished": "2015-06-02T05:10:37.628Z",
-    "dateModified": "2015-06-02T05:29:18.020Z",
-    "keywords": "Compass, Sass, 前端, Workflow",
+    "dateModified": "2016-07-10T15:45:26.347Z",
+    "keywords": "Compass, Sass, 前端, Workflow, 心得",
     "description": "Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在"
 }
     </script>
 
     <meta name="generator" content="Ghost 0.8">
     <link rel="alternate" type="application/rss+xml" title="就式人生" href="http://jostw.github.io/rss/">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css">
+<style>
+    body,
+    .page-description {
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+</style>
 </head>
-<body class="post-template tag-compass tag-sass tag-front-end tag-workflow nav-closed">
+<body class="post-template tag-compass tag-sass tag-front-end tag-workflow tag-thoughts nav-closed">
 
     
 
@@ -84,12 +92,12 @@
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-compass tag-sass tag-front-end tag-workflow">
+    <article class="post tag-compass tag-sass tag-front-end tag-workflow tag-thoughts">
 
         <header class="post-header">
             <h1 class="post-title">Replacement of Compass</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="2015-06-02">02 June 2015</time>  on <a href="../tag/compass/">Compass</a>, <a href="../tag/sass/">Sass</a>, <a href="../tag/front-end/">前端</a>, <a href="../tag/workflow/">Workflow</a>
+                <time class="post-date" datetime="2015-06-02">02 June 2015</time>  on <a href="../tag/compass/">Compass</a>, <a href="../tag/sass/">Sass</a>, <a href="../tag/front-end/">前端</a>, <a href="../tag/workflow/">Workflow</a>, <a href="../tag/thoughts/">心得</a>
             </section>
         </header>
 
@@ -196,7 +204,7 @@
   ga('create', 'UA-6245027-3', 'auto');
   ga('send', 'pageview');
 </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=b778513192"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=b778513192"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=47cfe4efac"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=47cfe4efac"></script>
 
 </body>
