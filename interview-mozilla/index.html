@@ -11,11 +11,12 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=1a4322dc94">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=8ae38d9fe6">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://jostw.github.io/interview-mozilla/">
-    <meta name="referrer" content="origin">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://jostw.github.io/interview-mozilla/amp/">
     
     <meta property="og:site_name" content="就式人生">
     <meta property="og:type" content="article">
@@ -23,12 +24,12 @@
     <meta property="og:description" content="這次面試的機會是透過 head hunter 介紹拿到的。比較特別的是聽 hunter 說一般面試前會先進行一個小測驗，而我並沒有經過這個測驗就直接進入面試階段。我想可能測驗是用來檢驗是否有基礎的技術能力，而有相關工作經驗的證明可能就可以直接跳過這關。 On-site Interview 面試第一關除了基本的介紹之外還有一個簡單的小測驗，題目不難但是會考到 JavaScript 的觀念，可以上白板寫也可以用自己的電腦。第一題是給一個 input 然後印出對應的 output 即可，不過這題對 JavaScript 特性不熟的人有可能會卡關。第二題是描述一個簡單的需求，用 JavaScript 實作，大概寫出關鍵點就好。第三題不用寫程式，只要說明執行結果即可，一樣是 JavaScript 的觀念題。過程中會一直被問為什麼，或是提出一些進階的需求，說明要如何修改。其實被問到的題目都是觀念題，而我也答的蠻順利的。 第二關是主管的面試，大概就是問一些工作上的問題，也會解釋這個職缺未來的工作內容，以及其他需求。 第三關是 HR 的面試，這關比較不一樣的是中間有一小段會用英文來問答。除了工作上的問題也會問一些跟工作無關的問題，我想主要是確認英文基本會話的能力，">
     <meta property="og:url" content="http://jostw.github.io/interview-mozilla/">
     <meta property="article:published_time" content="2015-10-15T07:29:00.000Z">
-    <meta property="article:modified_time" content="2016-08-16T14:52:32.633Z">
-    <meta property="article:tag" content="Mozilla">
-    <meta property="article:tag" content="面試">
-    <meta property="article:tag" content="心得">
-    <meta property="article:tag" content="JavaScript">
+    <meta property="article:modified_time" content="2016-08-16T14:52:32.000Z">
     <meta property="article:tag" content="2015">
+    <meta property="article:tag" content="面試">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="Mozilla">
+    <meta property="article:tag" content="心得">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Mozilla 面試">
@@ -37,7 +38,7 @@
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="jos">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Mozilla, 面試, 心得, JavaScript, 2015">
+    <meta name="twitter:data2" content="2015, 面試, JavaScript, Mozilla, 心得">
     
     <script type="application/ld+json">
 {
@@ -51,7 +52,12 @@
     "author": {
         "@type": "Person",
         "name": "jos",
-        "image": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
         "url": "http://jostw.github.io/author/jos/",
         "sameAs": [
             "http://jos.tw/"
@@ -60,13 +66,17 @@
     "headline": "Mozilla 面試",
     "url": "http://jostw.github.io/interview-mozilla/",
     "datePublished": "2015-10-15T07:29:00.000Z",
-    "dateModified": "2016-08-16T14:52:32.633Z",
-    "keywords": "Mozilla, 面試, 心得, JavaScript, 2015",
-    "description": "這次面試的機會是透過 head hunter 介紹拿到的。比較特別的是聽 hunter 說一般面試前會先進行一個小測驗，而我並沒有經過這個測驗就直接進入面試階段。我想可能測驗是用來檢驗是否有基礎的技術能力，而有相關工作經驗的證明可能就可以直接跳過這關。 On-site Interview 面試第一關除了基本的介紹之外還有一個簡單的小測驗，題目不難但是會考到 JavaScript 的觀念，可以上白板寫也可以用自己的電腦。第一題是給一個 input 然後印出對應的 output 即可，不過這題對 JavaScript 特性不熟的人有可能會卡關。第二題是描述一個簡單的需求，用 JavaScript 實作，大概寫出關鍵點就好。第三題不用寫程式，只要說明執行結果即可，一樣是 JavaScript 的觀念題。過程中會一直被問為什麼，或是提出一些進階的需求，說明要如何修改。其實被問到的題目都是觀念題，而我也答的蠻順利的。 第二關是主管的面試，大概就是問一些工作上的問題，也會解釋這個職缺未來的工作內容，以及其他需求。 第三關是 HR 的面試，這關比較不一樣的是中間有一小段會用英文來問答。除了工作上的問題也會問一些跟工作無關的問題，我想主要是確認英文基本會話的能力，"
+    "dateModified": "2016-08-16T14:52:32.000Z",
+    "keywords": "2015, 面試, JavaScript, Mozilla, 心得",
+    "description": "這次面試的機會是透過 head hunter 介紹拿到的。比較特別的是聽 hunter 說一般面試前會先進行一個小測驗，而我並沒有經過這個測驗就直接進入面試階段。我想可能測驗是用來檢驗是否有基礎的技術能力，而有相關工作經驗的證明可能就可以直接跳過這關。 On-site Interview 面試第一關除了基本的介紹之外還有一個簡單的小測驗，題目不難但是會考到 JavaScript 的觀念，可以上白板寫也可以用自己的電腦。第一題是給一個 input 然後印出對應的 output 即可，不過這題對 JavaScript 特性不熟的人有可能會卡關。第二題是描述一個簡單的需求，用 JavaScript 實作，大概寫出關鍵點就好。第三題不用寫程式，只要說明執行結果即可，一樣是 JavaScript 的觀念題。過程中會一直被問為什麼，或是提出一些進階的需求，說明要如何修改。其實被問到的題目都是觀念題，而我也答的蠻順利的。 第二關是主管的面試，大概就是問一些工作上的問題，也會解釋這個職缺未來的工作內容，以及其他需求。 第三關是 HR 的面試，這關比較不一樣的是中間有一小段會用英文來問答。除了工作上的問題也會問一些跟工作無關的問題，我想主要是確認英文基本會話的能力，",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://jostw.github.io"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.8">
+    <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="就式人生" href="http://jostw.github.io/rss/">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <style>
@@ -76,7 +86,7 @@
   }
 </style>
 </head>
-<body class="post-template tag-mozilla tag-interview tag-thoughts tag-javascript tag-2015 nav-closed">
+<body class="post-template tag-2015 tag-interview tag-javascript tag-mozilla tag-thoughts nav-closed">
 
     
 
@@ -92,12 +102,12 @@
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-mozilla tag-interview tag-thoughts tag-javascript tag-2015">
+    <article class="post tag-2015 tag-interview tag-javascript tag-mozilla tag-thoughts">
 
         <header class="post-header">
             <h1 class="post-title">Mozilla 面試</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="2015-10-15">15 October 2015</time>  on <a href="../tag/mozilla/">Mozilla</a>, <a href="../tag/interview/">面試</a>, <a href="../tag/thoughts/">心得</a>, <a href="../tag/javascript/">JavaScript</a>, <a href="../tag/2015/">2015</a>
+                <time class="post-date" datetime="2015-10-15">15 October 2015</time>  on <a href="../tag/2015/">2015</a>, <a href="../tag/interview/">面試</a>, <a href="../tag/javascript/">JavaScript</a>, <a href="../tag/mozilla/">Mozilla</a>, <a href="../tag/thoughts/">心得</a>
             </section>
         </header>
 
@@ -184,7 +194,7 @@
 
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -194,7 +204,7 @@
   ga('create', 'UA-6245027-3', 'auto');
   ga('send', 'pageview');
 </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=1a4322dc94"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=1a4322dc94"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=8ae38d9fe6"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=8ae38d9fe6"></script>
 
 </body>

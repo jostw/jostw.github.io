@@ -11,19 +11,20 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=1a4322dc94">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=8ae38d9fe6">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://jostw.github.io/replacement-of-compass/">
-    <meta name="referrer" content="origin">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://jostw.github.io/replacement-of-compass/amp/">
     
     <meta property="og:site_name" content="就式人生">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Replacement of Compass">
     <meta property="og:description" content="Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在">
     <meta property="og:url" content="http://jostw.github.io/replacement-of-compass/">
-    <meta property="article:published_time" content="2015-06-02T05:10:37.628Z">
-    <meta property="article:modified_time" content="2016-07-10T15:45:26.347Z">
+    <meta property="article:published_time" content="2015-06-02T05:10:37.000Z">
+    <meta property="article:modified_time" content="2016-07-10T15:45:26.000Z">
     <meta property="article:tag" content="Compass">
     <meta property="article:tag" content="Sass">
     <meta property="article:tag" content="前端">
@@ -51,7 +52,12 @@
     "author": {
         "@type": "Person",
         "name": "jos",
-        "image": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
         "url": "http://jostw.github.io/author/jos/",
         "sameAs": [
             "http://jos.tw/"
@@ -59,14 +65,18 @@
     },
     "headline": "Replacement of Compass",
     "url": "http://jostw.github.io/replacement-of-compass/",
-    "datePublished": "2015-06-02T05:10:37.628Z",
-    "dateModified": "2016-07-10T15:45:26.347Z",
+    "datePublished": "2015-06-02T05:10:37.000Z",
+    "dateModified": "2016-07-10T15:45:26.000Z",
     "keywords": "Compass, Sass, 前端, Workflow, 心得",
-    "description": "Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在"
+    "description": "Compass 是寫 Sass 非常好用的一個工具，但最近開始嘗試將 Compass 從專案中抽離。原因我想網路上可以找到很多，其中不外乎是環境以及效能問題。 在系統環境上如果要執行 Compass 的話必須先安裝 Ruby，然後才能透過 gem 安裝 Compass。這對於本來就用 Ruby 做為後端系統來說並不是什麼太大的問題，但對於非 Ruby 的後端來說 (ex: PHP, Node.js...)，為了這樣一個套件，需要再額外安裝 Ruby 的環境是有一點麻煩。 另外就是效能問題，Sass 最早是從 Ruby 底下誕生的，所以只能在 Ruby 的環境中編譯並不太意外。但後來出現了 LibSass 這個純粹用 C/C++ 寫的 Sass 編譯器，效能上整個就是打趴 Ruby，在",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://jostw.github.io"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.8">
+    <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="就式人生" href="http://jostw.github.io/rss/">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <style>
@@ -194,7 +204,7 @@
 
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -204,7 +214,7 @@
   ga('create', 'UA-6245027-3', 'auto');
   ga('send', 'pageview');
 </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=1a4322dc94"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=1a4322dc94"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=8ae38d9fe6"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=8ae38d9fe6"></script>
 
 </body>

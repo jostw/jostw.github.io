@@ -11,11 +11,12 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=1a4322dc94">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=8ae38d9fe6">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://jostw.github.io/2010-revision/">
-    <meta name="referrer" content="origin">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://jostw.github.io/2010-revision/amp/">
     
     <meta property="og:site_name" content="就式人生">
     <meta property="og:type" content="article">
@@ -23,10 +24,10 @@
     <meta property="og:description" content="自從 Blogger 推出新的範本設計工具後，就想說有一天要來更新成新的範本。沒想到這天等了這麼久 XD 稍微花了一點時間才把之前有用的 hack 都裝回去。終於更新完了，下一步是想辦法充實這裡(?)">
     <meta property="og:url" content="http://jostw.github.io/2010-revision/">
     <meta property="article:published_time" content="2010-08-13T13:33:00.000Z">
-    <meta property="article:modified_time" content="2016-07-20T13:53:33.381Z">
+    <meta property="article:modified_time" content="2016-07-20T13:53:33.000Z">
+    <meta property="article:tag" content="2010">
     <meta property="article:tag" content="公告">
     <meta property="article:tag" content="改版">
-    <meta property="article:tag" content="2010">
     <meta property="article:tag" content="Blogger">
     
     <meta name="twitter:card" content="summary">
@@ -36,7 +37,7 @@
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="jos">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="公告, 改版, 2010, Blogger">
+    <meta name="twitter:data2" content="2010, 公告, 改版, Blogger">
     
     <script type="application/ld+json">
 {
@@ -50,7 +51,12 @@
     "author": {
         "@type": "Person",
         "name": "jos",
-        "image": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
         "url": "http://jostw.github.io/author/jos/",
         "sameAs": [
             "http://jos.tw/"
@@ -59,13 +65,17 @@
     "headline": "更新版面",
     "url": "http://jostw.github.io/2010-revision/",
     "datePublished": "2010-08-13T13:33:00.000Z",
-    "dateModified": "2016-07-20T13:53:33.381Z",
-    "keywords": "公告, 改版, 2010, Blogger",
-    "description": "自從 Blogger 推出新的範本設計工具後，就想說有一天要來更新成新的範本。沒想到這天等了這麼久 XD 稍微花了一點時間才把之前有用的 hack 都裝回去。終於更新完了，下一步是想辦法充實這裡(?)"
+    "dateModified": "2016-07-20T13:53:33.000Z",
+    "keywords": "2010, 公告, 改版, Blogger",
+    "description": "自從 Blogger 推出新的範本設計工具後，就想說有一天要來更新成新的範本。沒想到這天等了這麼久 XD 稍微花了一點時間才把之前有用的 hack 都裝回去。終於更新完了，下一步是想辦法充實這裡(?)",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://jostw.github.io"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.8">
+    <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="就式人生" href="http://jostw.github.io/rss/">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <style>
@@ -75,7 +85,7 @@
   }
 </style>
 </head>
-<body class="post-template tag-announcement tag-revision tag-2010 tag-blogger nav-closed">
+<body class="post-template tag-2010 tag-announcement tag-revision tag-blogger nav-closed">
 
     
 
@@ -91,12 +101,12 @@
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-announcement tag-revision tag-2010 tag-blogger">
+    <article class="post tag-2010 tag-announcement tag-revision tag-blogger">
 
         <header class="post-header">
             <h1 class="post-title">更新版面</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="2010-08-13">13 August 2010</time>  on <a href="../tag/announcement/">公告</a>, <a href="../tag/revision/">改版</a>, <a href="../tag/2010/">2010</a>, <a href="../tag/blogger/">Blogger</a>
+                <time class="post-date" datetime="2010-08-13">13 August 2010</time>  on <a href="../tag/2010/">2010</a>, <a href="../tag/announcement/">公告</a>, <a href="../tag/revision/">改版</a>, <a href="../tag/blogger/">Blogger</a>
             </section>
         </header>
 
@@ -167,7 +177,7 @@
 
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -177,7 +187,7 @@
   ga('create', 'UA-6245027-3', 'auto');
   ga('send', 'pageview');
 </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=1a4322dc94"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=1a4322dc94"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=8ae38d9fe6"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=8ae38d9fe6"></script>
 
 </body>

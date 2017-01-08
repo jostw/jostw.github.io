@@ -11,22 +11,23 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=1a4322dc94">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=8ae38d9fe6">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://jostw.github.io/from-px-to-em/">
-    <meta name="referrer" content="origin">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://jostw.github.io/from-px-to-em/amp/">
     
     <meta property="og:site_name" content="就式人生">
     <meta property="og:type" content="article">
     <meta property="og:title" content="From PX to EM">
     <meta property="og:description" content="Pixel 是排版最常使用到的單位，但最近我開始改用 em 作為排版主要的單位。預設上 1em = 16px，也就是一個字的寬度。將 px 轉為 em 並不困難，困難的點在於 em 使用的觀念上與 px 並不相同。以下純粹是我自己摸索與實際使用經驗上得到的一點小結論，網路好像找不太到這種 em 的 better practice 文章 XD Pros 首先，先說明一下為什麼要改用 em 作為單位以及這樣做的好處。前端工程師在切版的時候，通常會從設計師手上拿到圖稿。這圖稿可能是 PSD 或是 AI 檔，壞一點的情況可能拿到純圖檔 (png, jpg...)。 切版的時後常常會遇到一個問題，就是某個區塊的間距到底是多少？是 15px 還是 18px？有經驗的前端工程師可能已經練成了一秒解讀的寫輪眼功力，對這種幾">
     <meta property="og:url" content="http://jostw.github.io/from-px-to-em/">
-    <meta property="article:published_time" content="2015-06-25T06:23:00.334Z">
-    <meta property="article:modified_time" content="2016-07-10T15:45:10.380Z">
+    <meta property="article:published_time" content="2015-06-25T06:23:00.000Z">
+    <meta property="article:modified_time" content="2016-07-10T15:45:10.000Z">
     <meta property="article:tag" content="前端">
-    <meta property="article:tag" content="心得">
     <meta property="article:tag" content="CSS">
+    <meta property="article:tag" content="心得">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="From PX to EM">
@@ -35,7 +36,7 @@
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="jos">
     <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="前端, 心得, CSS">
+    <meta name="twitter:data2" content="前端, CSS, 心得">
     
     <script type="application/ld+json">
 {
@@ -49,7 +50,12 @@
     "author": {
         "@type": "Person",
         "name": "jos",
-        "image": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/e062f5881a3298ac3511d09abd92bc3e?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
         "url": "http://jostw.github.io/author/jos/",
         "sameAs": [
             "http://jos.tw/"
@@ -57,14 +63,18 @@
     },
     "headline": "From PX to EM",
     "url": "http://jostw.github.io/from-px-to-em/",
-    "datePublished": "2015-06-25T06:23:00.334Z",
-    "dateModified": "2016-07-10T15:45:10.380Z",
-    "keywords": "前端, 心得, CSS",
-    "description": "Pixel 是排版最常使用到的單位，但最近我開始改用 em 作為排版主要的單位。預設上 1em &#x3D; 16px，也就是一個字的寬度。將 px 轉為 em 並不困難，困難的點在於 em 使用的觀念上與 px 並不相同。以下純粹是我自己摸索與實際使用經驗上得到的一點小結論，網路好像找不太到這種 em 的 better practice 文章 XD Pros 首先，先說明一下為什麼要改用 em 作為單位以及這樣做的好處。前端工程師在切版的時候，通常會從設計師手上拿到圖稿。這圖稿可能是 PSD 或是 AI 檔，壞一點的情況可能拿到純圖檔 (png, jpg...)。 切版的時後常常會遇到一個問題，就是某個區塊的間距到底是多少？是 15px 還是 18px？有經驗的前端工程師可能已經練成了一秒解讀的寫輪眼功力，對這種幾"
+    "datePublished": "2015-06-25T06:23:00.000Z",
+    "dateModified": "2016-07-10T15:45:10.000Z",
+    "keywords": "前端, CSS, 心得",
+    "description": "Pixel 是排版最常使用到的單位，但最近我開始改用 em 作為排版主要的單位。預設上 1em &#x3D; 16px，也就是一個字的寬度。將 px 轉為 em 並不困難，困難的點在於 em 使用的觀念上與 px 並不相同。以下純粹是我自己摸索與實際使用經驗上得到的一點小結論，網路好像找不太到這種 em 的 better practice 文章 XD Pros 首先，先說明一下為什麼要改用 em 作為單位以及這樣做的好處。前端工程師在切版的時候，通常會從設計師手上拿到圖稿。這圖稿可能是 PSD 或是 AI 檔，壞一點的情況可能拿到純圖檔 (png, jpg...)。 切版的時後常常會遇到一個問題，就是某個區塊的間距到底是多少？是 15px 還是 18px？有經驗的前端工程師可能已經練成了一秒解讀的寫輪眼功力，對這種幾",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://jostw.github.io"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.8">
+    <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="就式人生" href="http://jostw.github.io/rss/">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 <style>
@@ -74,7 +84,7 @@
   }
 </style>
 </head>
-<body class="post-template tag-front-end tag-thoughts tag-css nav-closed">
+<body class="post-template tag-front-end tag-css tag-thoughts nav-closed">
 
     
 
@@ -90,12 +100,12 @@
 </header>
 
 <main class="content" role="main">
-    <article class="post tag-front-end tag-thoughts tag-css">
+    <article class="post tag-front-end tag-css tag-thoughts">
 
         <header class="post-header">
             <h1 class="post-title">From PX to EM</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="2015-06-25">25 June 2015</time>  on <a href="../tag/front-end/">前端</a>, <a href="../tag/thoughts/">心得</a>, <a href="../tag/css/">CSS</a>
+                <time class="post-date" datetime="2015-06-25">25 June 2015</time>  on <a href="../tag/front-end/">前端</a>, <a href="../tag/css/">CSS</a>, <a href="../tag/thoughts/">心得</a>
             </section>
         </header>
 
@@ -192,7 +202,7 @@
 
     </div>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -202,7 +212,7 @@
   ga('create', 'UA-6245027-3', 'auto');
   ga('send', 'pageview');
 </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=1a4322dc94"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=1a4322dc94"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=8ae38d9fe6"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=8ae38d9fe6"></script>
 
 </body>
